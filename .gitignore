@@ -1,0 +1,56 @@
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# --- Xcode user-specific files ---
+# Per-developer UI state, breakpoints, schemes overrides. Never share.
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+
+# Build products and intermediates (anything Xcode regenerates on demand)
+build/
+DerivedData/
+*.o
+*.lo
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode-server / archive output
+*.xcarchive
+*.moved-aside
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# --- Swift Package Manager ---
+.swiftpm/
+.build/
+Package.resolved
+Packages/
+
+# --- CocoaPods (not used today, but harmless to pre-empt) ---
+Pods/
+*.xcworkspace/xcuserdata/
+
+# --- Carthage (not used today) ---
+Carthage/Build/
+
+# --- fastlane (not used today) ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# --- Tooling ---
+*.log
+.idea/
+.vscode/

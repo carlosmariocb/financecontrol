@@ -29,14 +29,39 @@
 		3DEF52C62FBD830200863C78 /* Control FinancieroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Control FinancieroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BBBB00010000000000000001 /* Exceptions for "Control Financiero" folder in "Control Financiero" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AGENTS.md,
+				AI/AGENTS.md,
+				Domain/AGENTS.md,
+			);
+			target = 3DEF52AC2FBD830100863C78 /* Control Financiero */;
+		};
+		BBBB00010000000000000002 /* Exceptions for "Control FinancieroTests" folder in "Control FinancieroTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AGENTS.md,
+			);
+			target = 3DEF52BB2FBD830200863C78 /* Control FinancieroTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3DEF52AF2FBD830100863C78 /* Control Financiero */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BBBB00010000000000000001 /* Exceptions for "Control Financiero" folder in "Control Financiero" target */,
+			);
 			path = "Control Financiero";
 			sourceTree = "<group>";
 		};
 		3DEF52BF2FBD830200863C78 /* Control FinancieroTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BBBB00010000000000000002 /* Exceptions for "Control FinancieroTests" folder in "Control FinancieroTests" target */,
+			);
 			path = "Control FinancieroTests";
 			sourceTree = "<group>";
 		};

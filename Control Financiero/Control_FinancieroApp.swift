@@ -1,31 +1,35 @@
-//
-//  Control_FinancieroApp.swift
-//  Control Financiero
-//
-//  Created by Carlos Mario Cardenas Bejarano on 20/05/26.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
 struct Control_FinancieroApp: App {
-    var sharedModelContainer: ModelContainer = {
+    let sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Account.self,
+            CreditCard.self,
+            TransactionCategory.self,
+            Transaction.self,
+            InstallmentPlan.self,
+            Goal.self,
+            Debt.self,
+            RecurringBill.self,
+            BudgetPeriod.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(for: schema, configurations: [configuration])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
 
+    init() {
+        try? SeedDefaults.seedIfEmpty(sharedModelContainer.mainContext)
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
         .modelContainer(sharedModelContainer)
     }
