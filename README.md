@@ -1,4 +1,4 @@
-# Control Financiero
+# Finance Control (Control Financiero)
 
 A local-first personal finance app for iPhone and Mac, designed around Colombian
 banking realities: COP-first formatting, quincenal (biweekly) 50/30/20 budgeting,
